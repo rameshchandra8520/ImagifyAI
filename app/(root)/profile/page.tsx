@@ -15,6 +15,7 @@ const Profile = async ({ searchParams }: SearchParamProps) => {
 
   const user = await getUserById(userId);
   const images = await getUserImages({ page, userId: user._id });
+  console.log(images);
 
   return (
     <>
